@@ -1,13 +1,23 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
-/* line 1, /home/gk/code/gkosmo-blog/app/assets/stylesheets/config/_variables.scss */
+@import url("https://fonts.googleapis.com/css?family=Arima+Madurai|Open+Sans|Roboto");
+/* line 2, /home/gk/code/gkosmo-blog/app/assets/stylesheets/config/_variables.scss */
 .top-pad {
-  padding-top: 60px;
+  padding-top: 80px;
+}
+
+/* line 5, /home/gk/code/gkosmo-blog/app/assets/stylesheets/config/_variables.scss */
+body {
+  background-color: #F8F8FF;
 }
 
 /* -------------------------------------
  * Fonts
  * ------------------------------------- */
+/* line 19, /home/gk/code/gkosmo-blog/app/assets/stylesheets/config/_variables.scss */
+.jumbotron {
+  font-family: 'Arima Madurai', cursive !important;
+}
+
 /* -------------------------------------
  * Colors
  * ------------------------------------- */
@@ -1729,7 +1739,7 @@ html {
 
 /* line 27, /usr/local/opt/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_scaffolding.scss */
 body {
-  font-family: "Open Sans", "Helvetica", "sans-serif";
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.4;
   color: #333333;
@@ -1841,7 +1851,7 @@ hr {
 /* line 9, /usr/local/opt/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_type.scss */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Raleway", "Helvetica", "sans-serif";
+  font-family: "Open Sans", "sans-serif";
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -7851,7 +7861,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Open Sans", "Helvetica", "sans-serif";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7989,7 +7999,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Open Sans", "Helvetica", "sans-serif";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;

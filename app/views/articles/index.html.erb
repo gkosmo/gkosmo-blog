@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 <div class="jumbotron text-center">
-<h1 style="color: white"> Welcome Welcome to my Humble Site</h1>
+<h1 style="color: white;     font-family: 'Arima Madurai', cursive
+; "> Welcome Welcome to my Humble Site</h1>
 </div>
         <% if current_user %>
             <%= link_to 'New Article', new_article_path %>
@@ -9,17 +10,22 @@
       <% end %>
         <% end %>
 <div class="row">
-<div class="col-lg-2">
+
     <% @articles.each do |article| %>
-       <%= link_to article_path(article) do %> <div class="well">
+    <div class="col-sm-3">
+
+       <%= link_to article_path(article) do %>
+    <div class="well">
+        <h2>
         <%= article.title %>
-        <% if current_user %>
-        <%= link_to 'Edit', edit_article_path(article) %>
-        <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </h2>
+        <h6 class="text-muted"><%= article.created_at.strftime("written the %D")   %></h6>
+    </div>
+
     <% end %>
 
-      </div>
-    <% end %>
-    <% end %>
   </div>
-  </div>
+
+
+    <% end %>
+

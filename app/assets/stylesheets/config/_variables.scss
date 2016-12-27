@@ -1,16 +1,23 @@
+
 .top-pad{
   padding-top: 80px;
 }
+body {
+    background-color: #F8F8FF;
+}
+
 $navbar-default-bg: #8B2323;
 $jumbotron-bg: #483D8B;
 /* -------------------------------------
  * Fonts
  * ------------------------------------- */
 // Google fonts
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
-$base-font: "Open Sans", "Helvetica", "sans-serif";
-$header-font: "Raleway", "Helvetica", "sans-serif";
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai|Open+Sans|Roboto');
+$header-font: "Open Sans", "sans-serif";
+$base-font: 'Roboto', sans-serif;
 
+.jumbotron{
+}
 // Local fonts (uncomment following lines)
 // @font-face {
 //   font-family: "Font Name";

@@ -13,11 +13,6 @@ body {
 /* -------------------------------------
  * Fonts
  * ------------------------------------- */
-/* line 19, /home/gk/code/gkosmo-blog/app/assets/stylesheets/config/_variables.scss */
-.jumbotron {
-  font-family: 'Arima Madurai', cursive !important;
-}
-
 /* -------------------------------------
  * Colors
  * ------------------------------------- */

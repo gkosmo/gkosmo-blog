@@ -1,31 +1,32 @@
 <p id="notice"><%= notice %></p>
 <div class="jumbotron text-center">
-<h1 style="color: white;     font-family: 'Arima Madurai', cursive
-; "> Welcome Welcome to my Humble Site</h1>
+  <h1 style="color: white;     font-family: 'Arima Madurai', cursive
+  ; "> Welcome Welcome to my Humble Site</h1>
 </div>
-        <% if current_user %>
-            <%= link_to 'New Article', new_article_path %>
-               <%= link_to destroy_user_session_path,  :method => :delete  do %>
-          <h1 class="fa fa-user"></h1>
-      <% end %>
-        <% end %>
+<% if current_user %>
+<%= link_to 'New Article', new_article_path %>
+<%= link_to destroy_user_session_path,  :method => :delete  do %>
+<h1 class="fa fa-user"></h1>
+<% end %>
+<% end %>
 <div class="row">
 
-    <% @articles.each do |article| %>
-    <div class="col-sm-3">
+  <% @articles.each do |article| %>
+  <div class="col-sm-3">
 
-       <%= link_to article_path(article) do %>
-    <div class="well">
-        <h2>
-        <%= article.title %>
-        </h2>
-        <h6 class="text-muted"><%= article.created_at.strftime("written the %D")   %></h6>
-    </div>
-
-    <% end %>
-
+   <%= link_to article_path(article) do %>
+   <div class="well">
+    <h2>
+      <%= article.title %>
+    </h2>
+    <h6 class="text-muted"><%= article.created_at.strftime("written the %D")   %></h6>
   </div>
 
+  <% end %>
 
-    <% end %>
+</div>
 
+
+<% end %>
+
+</div>

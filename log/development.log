@@ -5491,3 +5491,14 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 44ms (Views: 37.0ms | ActiveRecord: 5.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2016-12-29 12:46:45 +0100
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (49.7ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_flashes.html.erb (0.9ms)
+Completed 200 OK in 173ms (Views: 169.5ms | ActiveRecord: 1.4ms)
+
+

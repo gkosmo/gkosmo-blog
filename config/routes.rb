@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   mount Attachinary::Engine => "/attachinary"
+  mount Bootsy::Engine => '/bootsy', as: 'bootsy'
   resources :articles
   devise_for :users
   root to: 'articles#index'

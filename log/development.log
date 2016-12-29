@@ -5513,3 +5513,27 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 43ms (Views: 38.6ms | ActiveRecord: 2.5ms)
 
 
+Started GET "/" for 127.0.0.1 at 2016-12-29 12:53:08 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered articles/index.html.erb within layouts/application (38.2ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_flashes.html.erb (0.9ms)
+Completed 200 OK in 97ms (Views: 46.4ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2016-12-29 12:53:25 +0100
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (28.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mAttachinary::File Load (53.3ms)[0m  [1m[34mSELECT "attachinary_files".* FROM "attachinary_files" WHERE "attachinary_files"."attachinariable_id" = $1 AND "attachinary_files"."attachinariable_type" = $2 AND "attachinary_files"."scope" = $3[0m  [["attachinariable_id", 2], ["attachinariable_type", "Article"], ["scope", "photos"]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered articles/show.html.erb within layouts/application (452.0ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_flashes.html.erb (0.9ms)
+Completed 200 OK in 1529ms (Views: 412.2ms | ActiveRecord: 83.0ms)
+
+

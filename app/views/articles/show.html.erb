@@ -12,7 +12,7 @@
 
         <%= simple_format(@article.content) %>
         <div class="row">
-        <div class="col-lg-offset-2 col-lg-6 text-center">
+        <div class="col-lg-offset-3 col-lg-6 text-center">
         <% @article.photos.each do |photo| %>
 <%= cl_image_tag photo.path, width: 300, height: 200, crop: :fill %>
 <% end %>
